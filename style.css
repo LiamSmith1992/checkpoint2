@@ -1,0 +1,11 @@
+body {
+  background-image: url(https://foodtank.com/wp-content/uploads/2020/04/COVID-19-Relief_Small-Farms-.jpg);
+  background-repeat: none;
+  height: 100%;
+  width: 100%;
+}
+
+.piggy {
+  border-radius: 5em;
+  border: 5px solid brown;
+}
