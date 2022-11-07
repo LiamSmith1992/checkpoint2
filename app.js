@@ -41,7 +41,7 @@ function clickTracker() {
   })
   template = `
 <div class="col-12 bg-dark text-light noPadding">
-auto bacon = ${clickBacon}
+click bacon = ${clickBacon}
 </div>
 `
   document.getElementById('yoBacon').innerHTML = template
