@@ -27,7 +27,7 @@ let autoUpgrade = [{
 ]
 
 function clickTracker() {
-  let clickBacon = 0
+  let clickBacon = 1
   clickUpgrade.forEach(i => {
 
 
@@ -35,12 +35,16 @@ function clickTracker() {
       clickBacon += i.quantity * i.multiplier
       console.log('maker', clickBacon);
     }
-    else {
-      clickBacon += 0
-
-    }
+    else
+      (clickBacon += 0)
 
   })
+  template = `
+<div class="col-12 bg-dark text-light noPadding">
+auto bacon = ${clickBacon}
+</div>
+`
+  document.getElementById('yoBacon').innerHTML = template
 }
 
 function autoTracker() {
@@ -52,7 +56,12 @@ function autoTracker() {
     } else (autoBacon += 0)
   }
   )
-
+  template = `
+<div class="col-12 bg-dark text-light noPadding">
+auto bacon = ${autoBacon}
+</div>
+`
+  document.getElementById('yodaBacon').innerHTML = template
 }
 
 // function clickCounter() {
